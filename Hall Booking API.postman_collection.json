@@ -1,0 +1,108 @@
+{
+	"info": {
+		"_postman_id": "a4c1948c-91a7-4c7c-b916-f9161df5be85",
+		"name": "Hall Booking API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34950849"
+	},
+	"item": [
+		{
+			"name": "RoomBooking",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"customerName\":\"Nisha\",\r\n    \"date\": \"05-09-2024\", \r\n    \"startTime\": \"14:00\", \r\n    \"endTime\": \"17:00\", \r\n    \"roomId\": 3\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://hall-booking-main-7n13.onrender.com/bookings",
+					"protocol": "https",
+					"host": [
+						"hall-booking-main-7n13",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"bookings"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateRoom",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"seats\":6,\r\n\"amenities\":[\"ThreeDoubleBed\",\"fridge\",\"WaterHeater\"],\r\n\"pricePerHour\":12000 \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://hall-booking-main-7n13.onrender.com/rooms",
+					"protocol": "https",
+					"host": [
+						"hall-booking-main-7n13",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"rooms"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Rooms with Booked Data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://hall-booking-main-7n13.onrender.com/rooms",
+					"protocol": "https",
+					"host": [
+						"hall-booking-main-7n13",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"rooms"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Customers with Booked Data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://hall-booking-main-7n13.onrender.com/customers",
+					"protocol": "https",
+					"host": [
+						"hall-booking-main-7n13",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"customers"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
